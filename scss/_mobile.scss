@@ -1,8 +1,17 @@
 // WideScreen
-@include mediaXL {}
+@include mediaXL {
+
+    .projects {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 
 // Laptop or desktop screen
-@include mediaLg {}
+@include mediaLg {
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
 // Tablet or medium screen
 
@@ -54,6 +63,10 @@
 
         grid-template-columns: 1fr;
     }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 // Smart Phone
@@ -68,5 +81,9 @@
 
     .sm-heading {
         margin-left: -65px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
     }
 }
