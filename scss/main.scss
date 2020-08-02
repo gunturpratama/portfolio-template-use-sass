@@ -135,6 +135,34 @@ main {
     }
 }
 
+// Services projecct
+
+.services-info {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas:
+        'serv1 serv2 serv3';
+    grid-template-columns: repeat(3, 1fr);
+
+    .serv-1 {
+        grid-area: serv1;
+    }
+
+    .serv-2 {
+        grid-area: serv2;
+    }
+
+    .serv-3 {
+        grid-area: serv3;
+    }
+
+    .services {
+        background: lighten($primary-color, 5);
+        padding: 1rem;
+        border-bottom: $secondary-color 5px solid;
+    }
+}
+
 // Works Projects
 
 .projects {

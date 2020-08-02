@@ -202,6 +202,22 @@ main {
     padding: 1rem;
     border-bottom: #eece1a 5px solid; }
 
+.services-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'serv1 serv2 serv3';
+  grid-template-columns: repeat(3, 1fr); }
+  .services-info .serv-1 {
+    grid-area: serv1; }
+  .services-info .serv-2 {
+    grid-area: serv2; }
+  .services-info .serv-3 {
+    grid-area: serv3; }
+  .services-info .services {
+    background: #515151;
+    padding: 1rem;
+    border-bottom: #eece1a 5px solid; }
+
 .projects {
   display: grid;
   grid-gap: 0.7rem;
