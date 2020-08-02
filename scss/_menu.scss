@@ -13,7 +13,7 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: #fff;
+        background: set-text-color($primary-color);
         @include easeOut;
     }
 
@@ -29,21 +29,24 @@
         transform: rotate(180deg);
 
         .btn-line {
+
             // line 1 - rotate
-            &:nth-child(1){
-                transform: rotate(45deg) translate(5px,5px);
+            &:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
             }
-            &:nth-child(2){
+
+            &:nth-child(2) {
                 opacity: 0;
             }
-            &:nth-child(3){
-                transform: rotate(-45deg) translate(7px,-6px);
+
+            &:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -6px);
             }
-            
+
         }
     }
 
-    
+
 }
 
 
@@ -57,10 +60,11 @@
     visibility: hidden;
 
     &.show {
-        visibility: visible; 
+        visibility: visible;
     }
 
-    &-branding,&-nav {
+    &-branding,
+    &-nav {
         display: flex;
         flex-flow: column wrap;
         align-items: center;
@@ -93,7 +97,7 @@
         transform: translate3d(0, 100%, 0);
         @include easeOut;
 
-        
+
         &.show {
             transform: translate3d(0, 0, 0);
         }
@@ -117,7 +121,7 @@
             transform: translate3d(0, 0, 0);
         }
 
-        &.current > a {
+        &.current>a {
             color: $secondary-color;
         }
     }
@@ -129,7 +133,7 @@
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 500;
-        color: white;
+        color: set-text-color($primary-color);
         text-decoration: none;
         @include easeOut;
 
@@ -139,7 +143,7 @@
         }
     }
 
-    
+
 }
 
 
