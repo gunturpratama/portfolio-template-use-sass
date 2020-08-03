@@ -1,5 +1,6 @@
 // Select DOM items
 
+
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.menu-nav');
@@ -38,3 +39,18 @@ function toogleMenu() {
     }
 
 }
+
+new Typed('.type', {
+    strings: [
+        "Creative Agency.",
+        "Creative Space.",
+        "Web Developer",
+        "Mobile Developer",
+        "Web Designers",
+    ],
+    typeSpeed: 70,
+    startDelay: 1200,
+    backSpeed: 20,
+    backDelay: 500,
+    loop: true,
+});
